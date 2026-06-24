@@ -1,5 +1,15 @@
 <template>
   <header class="text-center mb-8 animate-fade-in">
+    <!-- 语言切换按钮 - 放在右上角 -->
+    <div class="flex justify-end mb-2">
+      <button
+        @click="toggleLang"
+        class="text-xs px-3 py-1.5 rounded-full border border-slate-200 dark:border-slate-700 text-slate-500 dark:text-slate-400 hover:border-primary-purple hover:text-primary-purple dark:hover:border-primary-pink dark:hover:text-primary-pink transition-all duration-200"
+      >
+        {{ t('switchLang') }}
+      </button>
+    </div>
+
     <div class="flex items-center justify-center gap-3 mb-2">
       <div class="w-10 h-10 rounded-xl gradient-btn flex items-center justify-center">
         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
@@ -11,10 +21,13 @@
       </h1>
     </div>
     <p class="text-gray-500 dark:text-gray-400 text-sm mt-1">
-      视频 无水印提取
+      {{ t('subtitle') }}
     </p>
   </header>
 </template>
 
 <script setup>
+import { useI18n } from '../i18n'
+
+const { t, toggleLang } = useI18n()
 </script>
