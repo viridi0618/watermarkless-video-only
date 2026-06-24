@@ -1,4 +1,5 @@
 ﻿<template>
+   <h1>豆包视频去水印 - 永久免费，0 广告</h1>
   <div class="min-h-screen bg-background-light dark:bg-background-dark transition-colors duration-300">
     <div class="w-[90%] max-w-[500px] mx-auto py-8 px-4">
       <Header />
